@@ -27,10 +27,16 @@ export function watchWord(long) {
 }
 
 /*Crea una función que filtre un array de nombres y devuelva solo los nombres con menos de cierta longitud.*/
+export function longName(nam, length) {
+  return nam.filter(function (nom) {
+    return nom.length < length;
+  });
+}
 
 /*Crea una función que sume todos los números de un array y devuelva también la media, mediana, moda y la suma total.*/
 
 /*Crea una función que cuente la cantidad de palabras en una frase.*/
+export function wordCount(nam, length) {}
 
 /*Crea una función que ordene un array de nombres alfabéticamente.*/
 
