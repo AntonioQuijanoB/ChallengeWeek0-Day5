@@ -36,10 +36,14 @@ export function longName(nam, length) {
 /*Crea una función que sume todos los números de un array y devuelva también la media, mediana, moda y la suma total.*/
 
 /*Crea una función que cuente la cantidad de palabras en una frase.*/
-export function wordCount(nam, length) {}
+export function wordCount(phrase) {
+  return phrase.trim().split(/\s+/).length;
+}
 
 /*Crea una función que ordene un array de nombres alfabéticamente.*/
-
+export function wordOrder(nombres) {
+  return nombres.sort();
+}
 /*Generador de números pares e impares: Escribe una función que tome un número como argumento y
 genere dos arrays, uno con los números pares hasta ese número y otro con los números impares hasta ese número.*/
 

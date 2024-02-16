@@ -4,3 +4,7 @@ import { watchWord } from './main.js';
 console.log(watchWord(29));
 import { longName } from './main.js';
 console.log(longName(['ana', 'antonio', 'juan'], 4));
+import { wordCount } from './main.js';
+console.log(wordCount('hola hola'));
+import { wordOrder } from './main.js';
+console.log(wordOrder(['ana', 'antonio', 'david']));
