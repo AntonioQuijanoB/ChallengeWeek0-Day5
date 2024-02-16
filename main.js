@@ -12,6 +12,19 @@ export function pyramid(numFloor) {
 
 /*Crea una función que genere una contraseña aleatoria con letras mayúsculas, letras minúsculas y números.
 Por parámetros se indicara la longitud, con un minimum de 6 caracteres.*/
+export function watchWord(long) {
+  const cara = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  let pass = '';
+  if (long < 6) {
+    return 'Necesita al menos 6 caracteres';
+  }
+  long = Math.max(long, 6);
+  for (let i = 0; i < long; i++) {
+    const randomIndex = Math.floor(Math.random() * cara.length);
+    pass += cara[randomIndex];
+  }
+  return pass;
+}
 
 /*Crea una función que filtre un array de nombres y devuelva solo los nombres con menos de cierta longitud.*/
 
@@ -26,10 +39,11 @@ genere dos arrays, uno con los números pares hasta ese número y otro con los n
 
 /*Crea una función que reciba un texto en kebab-case y devuelva el texto escrito en camelCase. 
 La función debe realizar las siguientes comprobaciones sobre el texto recibido:
-
+p
 Si tiene alguna mayúscula, debe devolver "The text contains capital letters"
 Si tiene algún guion bajo, debe devolver "The text contains underscores"
 Si el texto está vacío, debe devolver "You must provide some text"*/
+
 /*Desafíos adicionales*/
 /*Crea una función que reciba un texto en camelCase y devuelva el texto escrito en 
 kebab-case, en snake_case, en camelCase y en PascalCase...*/
