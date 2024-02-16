@@ -46,7 +46,21 @@ export function wordOrder(nombres) {
 }
 /*Generador de números pares e impares: Escribe una función que tome un número como argumento y
 genere dos arrays, uno con los números pares hasta ese número y otro con los números impares hasta ese número.*/
-
+export function parImpar(num) {
+  const pares = [];
+  const impares = [];
+  for (let i = 1; i <= num; i++) {
+    if (pares % 2 === 0) {
+      pares.push(i);
+    } else {
+      impares.push(i);
+    }
+  }
+  return [pares, impares];
+}
+const [pares, impares] = parImpar(10);
+console.log(pares);
+console.log(impares);
 /*Crea una función que reciba un texto en kebab-case y devuelva el texto escrito en camelCase. 
 La función debe realizar las siguientes comprobaciones sobre el texto recibido:
 p
